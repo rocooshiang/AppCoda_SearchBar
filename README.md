@@ -1,6 +1,6 @@
 # AppCoda_SearchBar
 
-Useage:
+Usage:
 
     ViewController.swift 
 
