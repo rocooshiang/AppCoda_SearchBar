@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate,CustomSearchControllerDelegate {
+    
+    var customSearchController: CustomSearchController!
     
     //原始資料
     var dataArray = [String]()
@@ -28,8 +30,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //載入資料
         loadListOfCountries()
         
-        //設置search bar
-        configureSearchController()
+        //Default search bar
+        //configureSearchController()
+        
+        //Custom search bar
+        configureCustomSearchController()
     }
     
     override func didReceiveMemoryWarning() {
@@ -143,8 +148,47 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return (countryText.rangeOfString(searchString, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
         })
         
-        // Reload the tableview.
         tblSearchResults.reloadData()
     }
+    
+    func configureCustomSearchController() {
+        customSearchController = CustomSearchController(searchResultsController: self, searchBarFrame: CGRectMake(0.0, 0.0, tblSearchResults.frame.size.width, 50.0), searchBarFont: UIFont(name: "Futura", size: 16.0)!, searchBarTextColor: UIColor.orangeColor(), searchBarTintColor: UIColor.blackColor())
+        
+        customSearchController.customSearchBar.placeholder = "請輸入關鍵字..."
+        tblSearchResults.tableHeaderView = customSearchController.customSearchBar
+        
+        customSearchController.customDelegate = self
+    }
+    
+    
+    //CustomSearchController Protocol
+    func didStartSearching() {
+        shouldShowSearchResults = true
+        tblSearchResults.reloadData()
+    }
+    
+    func didTapOnSearchButton() {
+        if !shouldShowSearchResults {
+            shouldShowSearchResults = true
+            tblSearchResults.reloadData()
+        }
+    }
+    
+    func didTapOnCancelButton() {
+        shouldShowSearchResults = false
+        tblSearchResults.reloadData()
+    }
+    
+    func didChangeSearchText(searchText: String) {
+        // Filter the data array and get only those countries that match the search text.
+        filteredArray = dataArray.filter({ (country) -> Bool in
+            let countryText: NSString = country
+            
+            return (countryText.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
+        })
+        
+        tblSearchResults.reloadData()
+    }
+    
 }
 
