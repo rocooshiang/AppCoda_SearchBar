@@ -13,6 +13,7 @@
 		C0622FCA1B7737790027A684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0622FC91B7737790027A684 /* Images.xcassets */; };
 		C0622FCD1B7737790027A684 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0622FCB1B7737790027A684 /* LaunchScreen.xib */; };
 		C0622FD91B77377A0027A684 /* CustomSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0622FD81B77377A0027A684 /* CustomSearchBarTests.swift */; };
+		C0622FE31B77386F0027A684 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = C0622FE21B77386F0027A684 /* countries.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C0622FD21B77377A0027A684 /* CustomSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0622FD71B77377A0027A684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0622FD81B77377A0027A684 /* CustomSearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBarTests.swift; sourceTree = "<group>"; };
+		C0622FE21B77386F0027A684 /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		C0622FB41B7737790027A684 = {
 			isa = PBXGroup;
 			children = (
+				C0622FE21B77386F0027A684 /* countries.txt */,
 				C0622FBF1B7737790027A684 /* CustomSearchBar */,
 				C0622FD51B77377A0027A684 /* CustomSearchBarTests */,
 				C0622FBE1B7737790027A684 /* Products */,
@@ -156,7 +159,9 @@
 		C0622FB51B7737790027A684 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Appcoda;
 				TargetAttributes = {
 					C0622FBC1B7737790027A684 = {
@@ -195,6 +200,7 @@
 				C0622FC81B7737790027A684 /* Main.storyboard in Resources */,
 				C0622FCD1B7737790027A684 /* LaunchScreen.xib in Resources */,
 				C0622FCA1B7737790027A684 /* Images.xcassets in Resources */,
+				C0622FE31B77386F0027A684 /* countries.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSearchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSearchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +379,7 @@
 				);
 				INFOPLIST_FILE = CustomSearchBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomSearchBar.app/CustomSearchBar";
 			};
@@ -385,6 +395,7 @@
 				);
 				INFOPLIST_FILE = CustomSearchBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomSearchBar.app/CustomSearchBar";
 			};
@@ -409,6 +420,7 @@
 				C0622FDE1B77377A0027A684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0622FDF1B77377A0027A684 /* Build configuration list for PBXNativeTarget "CustomSearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +429,7 @@
 				C0622FE11B77377A0027A684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
