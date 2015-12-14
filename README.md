@@ -1,6 +1,12 @@
 # AppCoda_SearchBar
 
+ScreenShot:
+-----------
+
+
+
 Usage:
+----------
 
     ViewController.swift 
 
@@ -11,7 +17,7 @@ Usage:
            configureCustomSearchController()
 
 Reference:
-  
+---------- 
         AppCoda中文
   
         http://www.appcoda.com.tw/custom-search-bar-tutorial/
