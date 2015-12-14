@@ -1,11 +1,17 @@
 # AppCoda_SearchBar
 
-ScreenShot:
+Screenshot:
 -----------
 **Default:**
 
-![pages](https://github.com/rocooshiang/AppCoda_SearchBar/blob/master/DefaultSearchBar1.jpg)
-![pages](https://github.com/rocooshiang/AppCoda_SearchBar/blob/master/DefaultSearchBar2.jpg)
+![Xcode indent settings](ScreenShot/DefaultSearchBar2.jpg)
+![Xcode indent settings](ScreenShot/DefaultSearchBar1.jpg)
+
+**Custom:**
+
+![Xcode indent settings](ScreenShot/CustomSearchBar2.jpg)
+![Xcode indent settings](ScreenShot/CustomSearchBar1.jpg)
+
 
 
 Usage:
@@ -22,6 +28,6 @@ Usage:
 Reference:
 ---------- 
 
-        [AppCoda中文](http://www.appcoda.com.tw/custom-search-bar-tutorial/)
+[AppCoda中文]（http://www.appcoda.com.tw/custom-search-bar-tutorial/）
   
     
