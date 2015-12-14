@@ -28,6 +28,6 @@ Usage:
 Reference:
 ---------- 
 
-[AppCoda中文]（http://www.appcoda.com.tw/custom-search-bar-tutorial/）
+[AppCoda中文](http://www.appcoda.com.tw/custom-search-bar-tutorial/)
   
     
