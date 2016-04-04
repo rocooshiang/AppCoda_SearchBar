@@ -28,6 +28,6 @@ Usage:
 Reference:
 ---------- 
 
-[AppCoda中文](http://www.appcoda.com.tw/custom-search-bar-tutorial/)
+[AppCoda中文: 如何利用UISearchController添加搜尋功能並打造客製化搜尋列](http://www.appcoda.com.tw/custom-search-bar-tutorial/)
   
     
